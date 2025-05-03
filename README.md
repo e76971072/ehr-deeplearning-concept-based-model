@@ -1,7 +1,9 @@
 # 🩺 RNN Time Series Forecasting for Acute Kidney Injury (AKI)
 
 **Authors:** Kevin Nguyen and Creon Creonopoulos
+
 **Dataset:** MIMIC-III 🏥
+
 **Reference Paper:** [Concept-based model explanations for Electronic Health Records](https://arxiv.org/pdf/2012.02308) 📄
 
 ## 🎯 Purpose
