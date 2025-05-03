@@ -6,6 +6,9 @@
 
 **Reference Paper:** [Concept-based model explanations for Electronic Health Records](https://arxiv.org/pdf/2012.02308) 📄
 
+**Project Demo:** [DEMO](https://arxiv.org/pdf/2012.02308) 📄
+
+
 ## 🎯 Purpose
 
 This project aims to replicate or adapt the methodology from the referenced paper for predicting Acute Kidney Injury (AKI) using Recurrent Neural Networks (RNNs) on the MIMIC-III dataset. The primary goal is typically to predict the onset of AKI within a future time window (e.g., 48 hours) based on past hourly clinical data sequences.
