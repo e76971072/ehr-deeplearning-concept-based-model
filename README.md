@@ -6,7 +6,7 @@
 
 **Reference Paper:** [Concept-based model explanations for Electronic Health Records](https://arxiv.org/pdf/2012.02308) 📄
 
-**Project Demo:** [DEMO](https://arxiv.org/pdf/2012.02308) 🎥
+**Project Demo:** [DEMO](https://youtu.be/bIoudRRiIgo) 🎥
 
 
 ## 🎯 Purpose
