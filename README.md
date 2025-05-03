@@ -17,7 +17,7 @@ The scripts generally cover:
 1. Loading and preprocessing MIMIC-III data (Labs, Vitals, etc.) 📊.
 2. Creating hourly time series sequences ⏳.
 3. Defining AKI labels based on criteria like KDIGO 🏷️.
-4. Building and training an RNN (e.g., GRU, LSTM) model using PyTorch 🧠.
+4. Building and training an RNN model using PyTorch 🧠.
 5. Evaluating the model using relevant metrics (AUROC, AUPRC) 📈.
 6. (Optional) Implementing and applying TCAV for model explainability as described in the paper 🤔.
 
@@ -26,15 +26,15 @@ The scripts generally cover:
 The typical workflow involves:
 
 1.  **Configuration & Setup:** Import libraries, set paths, define constants ⚙️.
-2.  **Data Loading:** Load necessary MIMIC-III tables (PATIENTS, ADMISSIONS, ICUSTAYS, LABEVENTS, CHARTEVENTS, etc.) potentially using `pyhealth` 💾.
+2.  **Data Loading:** Load necessary MIMIC-III tables (PATIENTS, ADMISSIONS, ICUSTAYS, LABEVENTS, CHARTEVENTS, OUTPUTEVENTS, PRESCRIPTIONS,PROCEDURES_ICD )  using `pyhealth` library 💾.
 3.  **Preprocessing:** Convert raw timestamped data into fixed-interval (e.g., hourly) sequences, handling missing values (e.g., using presence flags) and scaling numeric features ✨.
 4.  **Task Definition / Labeling:** Generate target labels based on the specific AKI prediction task (e.g., predicting onset in the next 48 hours for each hour, or classifying pre-AKI windows) 🏷️.
 5.  **Data Splitting:** Divide data into training, validation, and test sets, usually splitting by patient ID 🔪.
 6.  **Dataset & DataLoader:** Create PyTorch `Dataset` and `DataLoader` classes to handle the sequential data and batching 📦.
 7.  **Model Definition:** Define the RNN architecture (e.g., using `torch.nn.RNN`) 🤖.
-8.  **Training Loop:** Train the model using an appropriate loss function (e.g., `BCEWithLogitsLoss`) and optimizer (e.g., Adam) 💪.
+8.  **Training Loop:** Train the model using an appropriate loss function (`Binary Cross Entropy Loss`) and optimizer (`Adam`) 💪.
 9.  **Evaluation:** Evaluate the trained model on the test set using metrics like AUROC and AUPRC 💯.
-10. **(Optional) TCAV Analysis:** Implement concept definition, activation extraction, CAV training, and metric calculation (tCA, CS) to explain model behavior 🧐.
+10. **(Optional) TCAV Analysis:** Implement concept definition, activation extraction, CAV training, and metric calculation (tCAV, CAV) to explain model behavior 🧐.
 
 ## 🚀 How to Run
 
